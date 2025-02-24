@@ -1,0 +1,174 @@
+---
+layout: post
+title: "Google Earth Engine JS Interface"
+date: 2025-02-24 15:00:00 +0530
+categories: [Google Earth Engine, Introduction]
+---
+
+## Introduction
+
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <p style="margin-right: 15px;">
+    Google Earth Engine (GEE) is a cloud-based geospatial analysis platform that provides access to a vast collection of satellite imagery and geospatial datasets, enabling planetary-scale analysis.
+  </p>
+  <img src="https://developers.google.com/static/earth-engine/images/ee_earth_satellite_960.png" alt="Google Earth Engine Satellite Image" width="400" style="margin-left: 15px;">
+</div>
+
+<p style="font-size: 0.8em; text-align: right;">
+  <em>Image Source: <a href="https://developers.google.com/earth-engine" target="_blank">Google Earth Engine</a></em>
+</p>
+
+The platform combines a multi-petabyte data catalog with Google’s cloud computing, making it ideal for large-scale environmental monitoring, land cover classification, deforestation tracking, climate studies, and disaster response. It enables users to detect changes, map trends, and analyze decades of historical and real-time satellite data.<br>
+<br>
+The _Google Earth Engine JavaScript API_ serves a key interface for interacting with GEE. It allows users to access its vast datasets, perform advanced geospatial computations, and create visualizations using JavaScript directly within the Earth Engine Code Editor, a browser-based development environment.<br>
+<br>
+In this blog, we’ll explore both the Code Editor interface and the functionalities of the JavaScript API to process and visualize geospatial data.
+
+<br>
+
+---
+
+<br>
+
+## Google Earth Engine Code Editor
+
+The [Google Earth Engine Code Editor](code.earthengine.google.com) is a web-based IDE for the Earth Engine JavaScript API, designed for developing and visualizing geospatial workflows using the JavaScript API. It features an interactive environment for writing code, visualizing data, and managing assets and tasks.
+
+### 📝 Key Components:
+- Script Panel — Write and manage JavaScript code.  
+- Map Panel — View spatial data and map layers.  
+- Inspector Panel — Click on the map to inspect pixel values and feature properties.  
+- Console Panel — View printed outputs, logs, and error messages.  
+- Tasks Panel — Manage data exports and large-scale computations.  
+- Assets Panel — Access user-uploaded assets like shapefiles or images.<br>
+
+[![Components of the Earth Engine Code Editor](https://developers.google.com/static/earth-engine/images/Code_editor_diagram.png)](https://developers.google.com/earth-engine/guides/playground)  
+*Components of the Earth Engine Code Editor at [code.earthengine.google.com](https://code.earthengine.google.com)<br>📸 Image Source: [Google Earth Engine Guide](https://developers.google.com/earth-engine/guides/playground)*<br>
+
+### 1. 💻 JavaScript Code Editor
+#### Code development  
+- Central panel for writing and editing JavaScript code.  
+
+#### Features  
+- Syntax highlighting, error detection, auto-completion for brackets, quotes, and Earth Engine functions.  
+
+#### Control buttons  
+- `Run`, `Save`, `Run`, `Get Link`, `Apps` (for sharing scripts).  
+
+#### Compatibility  
+- Supports **ECMAScript 5 (ES5)**; ES6 and above are not supported.  
+
+### 2. 🗺️ Map Display
+#### Geospatial visualization  
+- Displays layers and results from scripts.  
+
+#### Layer Manager  
+- Adjust layer visibility, transparency, and visualization parameters *(e.g., custom color palettes, gamma, min/max range)*.  
+
+#### Map customization  
+- Change map backgrounds using `Map.setStyle()`.  
+
+#### Inspector integration  
+- Click on the map to get pixel values and location data.  
+
+### 3. 📖 Left Panel
+#### Docs Tab  
+- Access the complete API reference documentation.  
+- Searchable and browsable for easy code integration.  
+
+#### Scripts Tab (Script Manager)  
+- Manage private, shared, and example scripts stored in Git repositories.  
+- Organize scripts into folders, rename, delete, and version control through Git.  
+- Create reusable modules using `exports` and import them using `require()`.  
+
+#### Assets Tab (Asset Manager)  
+- Upload and manage private geospatial assets like images and tables.  
+- Supports formats like `.csv`, `.tif`, and others.  
+
+### 4. 🔍 Right Panel
+#### Inspector Tab  
+- Click on the map to view pixel values, coordinates, and feature data.  
+- Interactive object exploration for deeper data insights.  
+
+#### Console Tab  
+- Displays outputs from `print()` commands, including objects and charts.  
+- Interactive console allows expanding objects for detailed views.  
+
+#### Tasks Tab  
+- Manage long-running import/export tasks.  
+- Submit tasks for exporting data to Google Drive, Cloud Storage, or Earth Engine assets.  
+- Monitor task progress and cancel if necessary.  
+
+### 5. Additional Features
+#### Search Tool  
+- Search datasets and places directly in the Code Editor.  
+- Import datasets into scripts with one click.  
+
+#### Geometry Drawing Tools  
+- Draw points, lines, polygons, and rectangles directly on the map.  
+- Create and manage geometry layers and import them into scripts.  
+- Configure geometry properties, colors, and import types (*geometry, feature, or feature collection*).  
+
+#### Profiler  
+- Analyze resource usage (*CPU time, memory*) of scripts.  
+- Identify performance bottlenecks using the **"Run with profiler"** option.  
+
+#### Help and Documentation  
+- Access guides, forums, and keyboard shortcuts through the help button.  
+- Submit feedback, report bugs, or suggest datasets.  
+
+### 6. 🔗 Script Sharing and Management
+#### Get Link Button  
+- Generate snapshot URLs of scripts to share with others.  
+- Options to control auto-run behavior and visibility of the code panel.  
+
+#### Saved Script Links  
+- Share links to the latest saved version of a script from the Script Manager.  
+- Access control based on repository permissions.  
+
+#### Manage Links  
+- View, remove, or download previously created script links.  
+
+#### URL Parameters  
+- Use URL fragments to set map zoom, center, and other behaviors in shared links.
+
+<br>
+
+---
+
+<br>
+
+## 📑Working with the JavaScript API: Features and Functionalities
+
+The Earth Engine JavaScript API is the main tool used in the Google Earth Engine (GEE) Code Editor. It helps users work with geospatial data, like satellite images and maps, _directly in their browser_. Using simple JavaScript code, users can analyze data, create maps, and perform complex calculations without needing powerful local computers.
+
+This API gives access to a huge collection of datasets and allows users to run large-scale analyses quickly by using Google’s cloud servers.
+<br>
+Key Features of the Earth Engine JavaScript API:
+<div style="margin-left: 40px;"><p>
+🛰️ 1. <b>Massive Data Access:</b> Easily use satellite imagery (like Landsat, MODIS, Sentinel) and geospatial datasets (climate, land cover, etc.)<br>
+💻 2. <b>Cloud-Based Processing:</b> Run all computations on Google’s servers, enabling large-scale analysis without needing local resources.<br>
+🧭 3. <b>Geospatial Operations:</b> Supports tasks like image classification, time-series analysis, and spatial filtering.<br>
+🗺️ 4. <b>Visualization Tools:</b> Visualize data through interactive maps, graphs, and dynamic layers directly in the Code Editor.<br>
+📁 5. <b>Incorporate User's Own Datasets:</b> Upload and integrate personal geospatial data for custom analysis.<br>
+📤 6. <b>Data Export:</b> Export processed images, tables, or results to Google Drive, Cloud Storage, or Earth Engine Assets for further analysis.
+</p></div>
+<br>
+
+
+### 1. Importing and Displaying Satellite Imagery
+
+Let’s start by loading and displaying a Sentinel-2 image in true color.
+
+```javascript
+// Load a Sentinel-2 image
+var image = ee.Image('COPERNICUS/S2_SR/20220101T000000_20220101T235959_T31TCH');
+
+// Center the map on the image
+Map.centerObject(image, 10);
+
+// Add the image as a map layer
+Map.addLayer(image, {bands: ['B4', 'B3', 'B2'], min: 0, max: 3000}, 'True Color Image');
+```
+
+### 2. Filtering Image Collections by Date & Location

@@ -7,6 +7,13 @@ categories: [Google Earth Engine, Introduction]
 
 ## Introduction
 
+<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+  <p style="flex: 1; min-width: 250px; margin: 0;">
+    Google Earth Engine (GEE) is a cloud-based geospatial analysis platform that provides access to a vast collection of satellite imagery and geospatial datasets, enabling planetary-scale analysis.
+  </p>
+  <img src="https://developers.google.com/static/earth-engine/images/ee_earth_satellite_960.png" alt="Google Earth Engine Satellite Image" width="400" style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
+
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <p style="margin-right: 15px;">
     Google Earth Engine (GEE) is a cloud-based geospatial analysis platform that provides access to a vast collection of satellite imagery and geospatial datasets, enabling planetary-scale analysis.

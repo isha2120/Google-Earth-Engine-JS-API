@@ -44,6 +44,11 @@
   padding-bottom: 12px;
 }
 
+/* Minima adds an invisible clearfix element that would push About to the middle */
+.header-bar::after {
+  display: none;
+}
+
 .header-author {
   display: flex;
   align-items: center;

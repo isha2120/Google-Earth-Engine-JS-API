@@ -60,6 +60,11 @@ $tile-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helv
   display: none;
 }
 
+.header-nav {
+  display: flex;
+  gap: 10px;
+}
+
 .header-author {
   display: flex;
   align-items: center;

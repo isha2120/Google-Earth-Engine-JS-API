@@ -8,6 +8,9 @@
     </div>
 
     <nav class="header-nav">
+      {%- if page.layout != "home" %}
+      <a class="soft-button" href="{{ "/" | relative_url }}">Home</a>
+      {%- endif %}
       <a class="soft-button" href="{{ "/about/" | relative_url }}">About</a>
     </nav>
 

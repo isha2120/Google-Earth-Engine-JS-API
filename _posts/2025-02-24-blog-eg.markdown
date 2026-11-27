@@ -74,7 +74,7 @@ Your Google Earth Engine account is now linked to a Cloud Project, and you can s
 
 ## Google Earth Engine Code Editor
 
-The [Google Earth Engine Code Editor](code.earthengine.google.com) is a web-based integrated development environment (IDE) for the GEE JavaScript API, designed for developing and visualizing complex geospatial workflows. It features an interactive environment for writing code, visualizing data, and managing assets and tasks.
+The [Google Earth Engine Code Editor](https://code.earthengine.google.com) is a web-based integrated development environment (IDE) for the GEE JavaScript API, designed for developing and visualizing complex geospatial workflows. It features an interactive environment for writing code, visualizing data, and managing assets and tasks.
 
 ### 📝 Key Components:
 

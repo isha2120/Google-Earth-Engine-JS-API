@@ -48,10 +48,13 @@ The guide is available directly through GitHub Pages. No local installation is r
 Google-Earth-Engine-JS-API/
 │
 ├── _posts/          # Tutorial articles
-├── assets/          # Images and other resources
+├── _includes/       # Site header and homepage footer
+├── _layouts/        # Homepage layout with article tiles
+├── assets/          # Images and the site stylesheet (main.scss)
 ├── _config.yml      # Jekyll configuration
-├── about.markdown   # About page
+├── about.markdown   # More About Me page
 ├── index.markdown   # Website homepage
+├── 404.html         # Page-not-found page
 └── README.md        # Project documentation
 ```
 

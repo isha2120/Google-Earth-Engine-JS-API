@@ -47,13 +47,11 @@ The guide is available directly through GitHub Pages. No local installation is r
 ```text
 Google-Earth-Engine-JS-API/
 │
-├── _posts/          # Tutorial articles
-├── _includes/       # Site header and homepage footer
-├── _layouts/        # Homepage layout with article tiles
+├── _posts/          # The guide
+├── _includes/       # Site header (links to https://isha2120.github.io/)
 ├── assets/          # Images and the site stylesheet (main.scss)
 ├── _config.yml      # Jekyll configuration
-├── about.markdown   # More About Me page
-├── index.markdown   # Website homepage
+├── index.markdown   # Opens the guide
 ├── 404.html         # Page-not-found page
 └── README.md        # Project documentation
 ```

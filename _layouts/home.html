@@ -1,0 +1,67 @@
+
+---
+layout: default
+---
+
+<section class="home-hero">
+  <p class="home-label">GOOGLE EARTH ENGINE · JAVASCRIPT API</p>
+
+  <h1>A Hands-on Guide to Google Earth Engine</h1>
+
+  <p class="home-description">
+    Explore satellite imagery, process geospatial data, and create
+    interactive visualisations using the Google Earth Engine JavaScript API.
+  </p>
+
+  <a class="home-button" href="{{ site.posts.first.url | relative_url }}">
+    Explore the guide →
+  </a>
+</section>
+
+<section class="home-intro">
+  <h2>Getting started</h2>
+
+  <p>
+    This guide introduces the Google Earth Engine Code Editor and its
+    JavaScript API. It walks through the interface, basic operations,
+    and practical examples to help you get started with geospatial analysis.
+  </p>
+</section>
+
+<section class="home-featured">
+  <h2>Featured guide</h2>
+
+  {% if site.posts.size > 0 %}
+    {% assign featured_post = site.posts.first %}
+
+    <article class="featured-card">
+      <p class="post-meta">
+        {{ featured_post.date | date: "%B %-d, %Y" }}
+      </p>
+
+      <h3>
+        <a href="{{ featured_post.url | relative_url }}">
+          {{ featured_post.title }}
+        </a>
+      </h3>
+
+      <p>{{ featured_post.excerpt | strip_html | truncate: 200 }}</p>
+
+      <a href="{{ featured_post.url | relative_url }}">
+        Read the guide →
+      </a>
+    </article>
+  {% endif %}
+</section>
+
+<section class="home-about">
+  <h2>About this project</h2>
+
+  <p>
+    This website is a practical introduction to working with Google Earth
+    Engine through JavaScript, with examples and explanations to help you
+    explore its capabilities.
+  </p>
+
+  <a href="{{ '/about/' | relative_url }}">Learn more →</a>
+</section>

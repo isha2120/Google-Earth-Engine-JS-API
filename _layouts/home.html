@@ -17,6 +17,18 @@ layout: default
     <p class="post-tile-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}</p>
     {%- endif %}
 
+    {%- if post.title == "Getting Started with Google Earth Engine JS API" %}
+    <details class="post-tile-about">
+      <summary>About this guide ▾</summary>
+      <p>This blog provides a brief introduction to the Google Earth Engine JavaScript API, covering its basic features and functionalities. It aims to offer a simplified overview of the platform, highlighting key concepts, code examples, and practical applications for geospatial data analysis and visualization. 🛰️🌏</p>
+    </details>
+    {%- elsif post.about %}
+    <details class="post-tile-about">
+      <summary>About this guide ▾</summary>
+      <p>{{ post.about }}</p>
+    </details>
+    {%- endif %}
+
     <div class="post-tile-action">
       <a class="soft-button" href="{{ post.url | relative_url }}">Explore the guide →</a>
     </div>

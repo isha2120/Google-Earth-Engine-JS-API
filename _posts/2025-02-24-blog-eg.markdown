@@ -777,11 +777,11 @@ Here are some useful resources to help you explore the Google Earth Engine JavaS
 
 <br>
 
-## Team
+## About the Author
 
-### Team J049
-Ineesha Sankar - 24110138<br>
-Dhulipala Pranathi Mohan - 24110110<br>
-Vikram Aditya Dubbaka - 24110385<br>
+**Ineesha Sankar**
 
-We would like to thank Professor Nipun Batra for introducing us to Google Earth Engine and providing us the opportunity to work on this assignment. This experience allowed us to explore a new platform and  understand process of building our own website and has been a valuable learning experience
+B.Tech 2024-2028, IC Design and Technology
+Indian Institute of Technology Gandhinagar
+
+I would like to thank Professor Nipun Batra for introducing me to Google Earth Engine and providing me with the opportunity to work on this project. This experience allowed me to explore a new platform, understand its capabilities, and gain practical experience in building and publishing a website.

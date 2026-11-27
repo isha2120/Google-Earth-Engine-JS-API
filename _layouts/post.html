@@ -1,0 +1,26 @@
+
+---
+layout: default
+---
+
+<article class="article-page">
+
+  <header class="article-header">
+    <p class="article-category">GOOGLE EARTH ENGINE · GUIDE</p>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <p class="article-meta">
+      Published on {{ page.date | date: "%B %-d, %Y" }}
+    </p>
+  </header>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+  <footer class="article-footer">
+    <a href="{{ '/' | relative_url }}">← Back to home</a>
+  </footer>
+
+</article>

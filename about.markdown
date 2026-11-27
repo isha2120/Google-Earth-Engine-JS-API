@@ -4,13 +4,20 @@ title: More about me
 permalink: /about/
 ---
 
-**Ineesha Sankar**  
-B.Tech 2024–2028, IC Design and Technology  
-Indian Institute of Technology Gandhinagar
+<div class="about-intro">
+  <div class="about-intro-left">
+    <strong>Ineesha Sankar</strong><br>
+    B.Tech 2024–2028, IC Design and Technology<br>
+    Indian Institute of Technology Gandhinagar
+  </div>
+  <div class="about-intro-right">
+    <a href="mailto:ineesha.sankar@iitgn.ac.in">ineesha.sankar@iitgn.ac.in</a><br>
+    <a href="https://github.com/isha2120">GitHub</a><br>
+    <a href="https://www.linkedin.com/in/ineesha-sankar-117gn">LinkedIn</a>
+  </div>
+</div>
 
-[ineesha.sankar@iitgn.ac.in](mailto:ineesha.sankar@iitgn.ac.in) · [GitHub](https://github.com/isha2120) · [LinkedIn](https://www.linkedin.com/in/ineesha-sankar-117gn)
-
-I am a third-year B.Tech student in Integrated Circuit Design and Technology at IIT Gandhinagar, focusing on analog, mixed-signal (AMS), and digital CMOS design.
+Hello! I am a third-year B.Tech student in Integrated Circuit Design and Technology at IIT Gandhinagar, focusing on analog, mixed-signal (AMS), and digital CMOS design.
 
 My current design work in Cadence Virtuoso includes:
 

@@ -172,3 +172,31 @@ $tile-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helv
   font-size: 13px;
   color: #555555;
 }
+
+.about-intro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  margin-bottom: 24px;
+}
+
+.about-intro-right {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .about-intro-right {
+    text-align: left;
+  }
+}
+
+.author-footer .author-footer-more {
+  margin-top: 10px;
+}
+
+.author-footer a,
+.author-footer a:visited {
+  color: $tile-button-text;
+  text-decoration: underline;
+}

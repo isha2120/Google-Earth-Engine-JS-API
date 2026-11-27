@@ -121,11 +121,16 @@ $tile-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helv
 }
 
 .post-tile-about summary {
+  list-style: none;
   cursor: pointer;
   color: $tile-button-text;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 4px;
+}
+
+.post-tile-about summary::-webkit-details-marker {
+  display: none;
 }
 
 .post-tile-about p {

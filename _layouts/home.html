@@ -1,46 +1,27 @@
-
 ---
 layout: default
 ---
 
-<section class="home-posts">
+<div class="home">
 
-  {% for post in site.posts %}
+  {%- for post in site.posts -%}
+  <article class="post-tile">
 
-    <article class="home-post-card">
+    <p class="post-tile-date">{{ post.date | date: "%B %-d, %Y" }}</p>
 
-      <p class="post-meta">
-        {{ post.date | date: "%B %-d, %Y" }}
-      </p>
+    <h2 class="post-tile-title">{{ post.title | escape }}</h2>
 
-      <h2>
-        {{ post.title }}
-      </h2>
+    {%- if post.title == "Getting Started with Google Earth Engine JS API" %}
+    <p class="post-tile-text">Dive into the Google Earth Engine JS Interface! 🌏✨ An interactive platform that uses the JavaScript API for processing, analyzing, and visualizing geospatial data. 🛰️🗺️</p>
+    {%- else %}
+    <p class="post-tile-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}</p>
+    {%- endif %}
 
-      {% if post.title == "Getting Started with Google Earth Engine JS API" %}
+    <div class="post-tile-action">
+      <a class="soft-button" href="{{ post.url | relative_url }}">Explore the guide →</a>
+    </div>
 
-        <p>
-          Dive into the Google Earth Engine JS Interface! 🌏✨
-          An interactive platform that uses the JavaScript API for
-          processing, analyzing, and visualizing geospatial data. 🛰️🗺️
-        </p>
+  </article>
+  {%- endfor -%}
 
-      {% else %}
-
-        <p>
-          {{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}
-        </p>
-
-      {% endif %}
-
-      <div class="home-post-action">
-        <a href="{{ post.url | relative_url }}" class="home-button">
-          Explore the guide →
-        </a>
-      </div>
-
-    </article>
-
-  {% endfor %}
-
-</section>
+</div>
